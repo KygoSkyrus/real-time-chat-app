@@ -24,7 +24,7 @@
             <p id="room-name"></p>
            </div> 
            <form action="index.html">
-               <button type="submit"><section class="dp-none">EXIT</section> <i class="fas fa-sign-out-alt"></i></button>
+               <button type="submit"><section class="dp-none">EXIT</section> <i class="fas fa-sign-out-alt" aria-hidden="true"></i></button>
            </form>
         </div>
         
@@ -32,7 +32,7 @@
         <div class="users-container" onclick="showUsers()">
             <div class="flex padding" >
                 <section >Active users</section>
-                <i class="fas fa-angle-down"></i>
+                <i class="fas fa-angle-down" aria-hidden="true"></i>
             </div>
             <ul id="users" onclick="hideUsers()"></ul>
         </div>
@@ -43,7 +43,7 @@
 
             <div class="msg-send">
                 <input placeholder="Enter message" id='msg' autocomplete="off" required/>
-                <button><section class="dp-none">SEND</section> <i class="fas fa-paper-plane"></i></button>
+                <button><section class="dp-none">SEND</section> <i class="fas fa-paper-plane" aria-hidden="true"></i></button>
             </div>
         </form>
     </div>

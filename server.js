@@ -26,7 +26,7 @@ io.on('connection', socket=>{
         socket.emit('message',formatMessage(botname,`${user.username}, welcome to SkyChat`));//as soon as someone connects it will send this message(will send msg to a single client)
 
         //broadcast when a useer connectrs(means send msg to everyone but the person himself)
-        socket.broadcast.to(user.room).emit('message',formatMessage(botname,`${user.username} has joind the chat`));
+        socket.broadcast.to(user.room).emit('message',formatMessage(botname,`${user.username} has joined the chat`));
 
         //send users and room info
         io.to(user.room).emit('roomUsers',{

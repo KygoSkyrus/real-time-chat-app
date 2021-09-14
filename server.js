@@ -63,6 +63,6 @@ io.on('connection', socket=>{
     //io.emit(); tis will sed msg to everone
 });
 
-const PORT=3000 || process.env.PORT;
+const PORT= process.env.PORT || 5000 ;
 
 server.listen(PORT, ()=>{console.log(`server running on port ${PORT}`)});

@@ -16,6 +16,8 @@
 <body>
     <div class="container-chat">
 
+        <div class="cc2">
+            
         <div class="ab">
            <div class="flex room-container">
             <section>Room  -&nbsp;</section>
@@ -27,8 +29,8 @@
         </div>
         
 
-        <div class="users-container">
-            <div class="flex padding" onclick="showUsers()">
+        <div class="users-container" onclick="showUsers()">
+            <div class="flex padding" >
                 <section >Active users</section>
                 <i class="fas fa-angle-down"></i>
             </div>
@@ -44,11 +46,8 @@
                 <button><section class="dp-none">SEND</section> <i class="fas fa-paper-plane"></i></button>
             </div>
         </form>
-
-
     </div>
-    <p class="by">by kygoskyrus</p>
-
+    </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.10.1/qs.min.js" integrity="sha512-aTKlYRb1QfU1jlF3k+aS4AqTpnTXci4R79mkdie/bp6Xm51O5O3ESAYhvg6zoicj/PD6VYY0XrYwsWLcvGiKZQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="/socket.io/socket.io.js"></script>

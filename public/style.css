@@ -127,7 +127,7 @@ body {
   appearance: none;
   border-radius: 4px;
   border: none;
-  background-color: rgb(209, 16, 16);
+  background-color: rgb(228, 58, 58);
   color: white;
 }
 
@@ -215,16 +215,20 @@ body {
 }
 
 /*responsive*/
-
 @media (max-width: 650px) {
   .container-chat {
-    width: auto;
-    height: auto;
+    width: 100vw;
+    height: 100vh;
     min-height: auto;
     min-width: 370px;
     padding: 25px;
+    display: flex;
+    align-items: center;
   }
 
+  .cc2{
+    width: inherit;
+  }
   .chat-messages{
     height:60vh;
   }

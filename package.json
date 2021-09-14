@@ -1,5 +1,5 @@
 {
-  "name": "real-time-chat-app",
+  "name": "skychat",
   "version": "1.0.0",
   "description": "a real time chat application",
   "main": "server.js",
@@ -24,5 +24,8 @@
   },
   "devDependencies": {
     "nodemon": "^2.0.12"
-  }
+  },
+  "engines": {
+    "node": "v14.17.6"
+}
 }

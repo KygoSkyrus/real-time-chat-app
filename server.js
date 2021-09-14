@@ -12,7 +12,7 @@ const io=socket(server);
 //set static folder
 app.use(express.static(path.join(__dirname, 'public')));
 
-const botname="SkyChat bot";
+const botname="SkyChat Bot";
 
 //run when client comnnects
 io.on('connection', socket=>{
@@ -23,7 +23,7 @@ io.on('connection', socket=>{
         socket.join(user.room);
 
         //welcome current user
-        socket.emit('message',formatMessage(botname,`${user.username}, Welcome to SkyChat`));//as soon as someone connects it will send this message(will send msg to a single client)
+        socket.emit('message',formatMessage(botname,`${user.username}, welcome to SkyChat`));//as soon as someone connects it will send this message(will send msg to a single client)
 
         //broadcast when a useer connectrs(means send msg to everyone but the person himself)
         socket.broadcast.to(user.room).emit('message',formatMessage(botname,`${user.username} has joind the chat`));

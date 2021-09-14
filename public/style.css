@@ -186,6 +186,13 @@ body {
 .main-message {
   padding: 4px 8px;
 }
+/*for the notifications send by bot*/
+.green{
+background-color: rgb(32, 129, 19);
+}
+.green-l{
+  background-color: rgb(60, 190, 42);
+}
 
 /*footer*/
 .msg-send {

@@ -10,7 +10,7 @@ const server =http.createServer(app);
 const io=socket(server);
 
 //set static folder
-app.use(express.static(path.join(__dirname, 'public')));
+ app.use(express.static(path.join(__dirname, 'public')));
 
 const botname="SkyChat Bot";
 
@@ -63,6 +63,11 @@ io.on('connection', socket=>{
     //io.emit(); tis will sed msg to everone
 });
 
-const PORT= process.env.PORT || 5000 ;
+
+if(process.env.NODE_ENV ==="production"){
+    app.use(express.static("public"));
+  }
+
+const PORT= process.env.PORT || 4000 ;
 
 server.listen(PORT, ()=>{console.log(`server running on port ${PORT}`)});
